@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader {
+    width: 80%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(170, 143, 143); */
+}
+
+.brand-heading {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+}
+
+.brand-heading .bh-c {
+    color: purple;
+}
+
+.brand-heading .bh-p {
+    color: rgb(228, 200, 41);
+}
+
+.brand-decoration {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tooltip-display {
+    width: 100%;
+    height: 10%;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-grid {
+    width: 90%;
+    height: 8%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-grid div {
+    color: black;
+    width: 40%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-grid a {
+    text-decoration: none;
+}
+
+.navigation-grid .about {
+    background-color: rgb(218, 216, 216);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.navigation-grid .about:hover {
+    background-color: rgb(197, 196, 196);
+}
+
+.navigation-grid .about a {
+    color: black;
+}
+
+.navigation-grid .login {
+    background-color: purple;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.navigation-grid .login:hover {
+    background-color: rgb(155, 3, 155);
+}
+
+.navigation-grid .login a {
+    color: rgb(202, 202, 202);
+}

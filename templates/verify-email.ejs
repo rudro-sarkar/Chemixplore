@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/stylesheets/login-page.css">
+    <title>Chemixplore | Verify Account</title>
+</head>
+<body>
+    
+    <div class="login-container">
+
+        <div class="brand-display">
+            <div class="brand-logo">
+                <img src="/images/chemixplore-logo.png">
+            </div>
+            <div class="brand-text">
+                <p class="brand-heading">
+                    <span class="bh-c">C</span>hemix<spam class="bh-p">P</spam>lore
+                </p>
+            </div>
+        </div>
+
+        <div class="login-inputs-container">
+            <form id="login_form" method="post" action="/email_verification" class="input-container">
+                <input name="verificatio_code" placeholder="Enter the 8 digit verificatio code" type="text">
+            </form>
+
+            <% if (err != 'no') { %>
+                <p class="alert-message"><%= err %></p>
+            <% } %>
+
+            <button class="login-button" id="login_form_submit">Verify</button>
+
+            <div class="signup-redirection-container">
+                <p>Didn't receive the code?</p>
+                <a href="/abort_and_restart_registration">Request again</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const login_submit_btn = document.getElementById('login_form_submit');
+
+        login_submit_btn.addEventListener('click', () => {
+            document.getElementById('login_form').submit();
+        });
+    </script>
+
+</body>
+</html>
