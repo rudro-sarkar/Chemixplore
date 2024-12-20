@@ -62,5 +62,54 @@ nav {
 .workspaces {
     width: 100%;
     height: 20rem;
-    background-color: rgb(212, 210, 210);
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(228, 228, 228);
+}
+
+.local_workspace_intro_card_container, .collaborative_workspace_intro_card_container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.local_workspace_intro_card {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    background-color: rgb(241, 226, 247);
+    display: flex;
+    justify-content: center;
+}
+
+.local_workspace_nav_container {
+    height: 80%;
+    width: 50%;
+}
+
+.local_workspace_title {
+    font-size: 1rem;
+    color: purple;
+}
+
+.local_workspace_hero {
+    font-size: 0.6rem;
+}
+
+.local_workspace_create_button {
+    width: 60%;
+    height: 2rem;
+    background-color: purple;
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
 }
